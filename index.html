@@ -4,20 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
 
 </head>
 <body>
 
-  Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
+  <nav>
+    <ul class="navbar">
+      <li><a href="#">Features</a>
+        <div class="dropdown-content">
+          <a href="#">Todo list</a>
+          <a href="#">Calendar</a>
+          <a href="#">Reminders</a>
+          <a href="#">Planning</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Company</a>
+        <div class="dropdown-content">
+          <a href="#">History</a>
+          <a href="#">Our Team</a>
+          <a href="#">Blog</a>
+        </div>
+      </li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+    <div class="container">
+      <button class="login-button">Login</button>
+      <button class="register-button">Register</button>
+    </div>
+  </nav>
 
   Make remote work
 
@@ -26,6 +45,6 @@
 
   Learn more
   
-
+<script src="app.js"></script>
 </body>
 </html>
